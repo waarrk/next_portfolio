@@ -43,10 +43,8 @@
     justify-content: space-around;
   }
   .aboutme {
-    flex-grow: 1;
   }
   .space {
-    flex-grow: 1;
   }
 }
 

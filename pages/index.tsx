@@ -3,6 +3,9 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
+
+import Aboutme from '../components/layouts/aboutme'
+
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
@@ -13,22 +16,12 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <div className={styles.eyecatch}>
-          <div className={styles.space}>
+        <div className='w-10/12 lg:flex lg:justify-around'>
+          <div>
             <p>This is waarrk's personal page.</p>
           </div>
-
-          <div className={styles.aboutme}>
-            <div className={styles.name}>
-              <div className='max-w-sm mx-auto flex py-8 px-10 bg-slate-900 rounded-lg shadow-xl'>
-                <Image src="/images/kamo.jpg" width={90} height={90} objectFit="contain" className='rounded-full' />
-                <div className="ml-6 pt-1">
-                  <p className="text-2xl text-gray-200 leading-tight">Yusaku Washio</p>
-                  <p className='text-base text-gray-400 leading-normal'>waarrk</p>
-                </div>
-              </div>
-            </div>
-          </div>
+          
+          <Aboutme/>
         </div>
 
       </main>
