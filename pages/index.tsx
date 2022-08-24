@@ -13,44 +13,24 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+        <div className={styles.eyecatch}>
+          <div className={styles.space}>
+            <p>This is waarrk's personal page.</p>
+          </div>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.tsx</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+          <div className={styles.aboutme}>
+            <div className={styles.name}>
+              <div className='max-w-sm mx-auto flex py-8 px-10 bg-slate-900 rounded-lg shadow-xl'>
+                <Image src="/images/kamo.jpg" width={90} height={90} objectFit="contain" className='rounded-full' />
+                <div className="ml-6 pt-1">
+                  <p className="text-2xl text-gray-200 leading-tight">Yusaku Washio</p>
+                  <p className='text-base text-gray-400 leading-normal'>waarrk</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
       </main>
 
       <footer className={styles.footer}>
