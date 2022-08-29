@@ -12,7 +12,7 @@ const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>waarrk</title>
+        <title>waarrk　| Yusaku Washio</title>
         <meta name="description" content="Yusaku Washio Personal Page." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
