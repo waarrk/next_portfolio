@@ -4,7 +4,7 @@ import Link from 'next/link'
 export default function Aboutme() {
   return (
     <>
-      <div className='max-w-xl min-w-xl mx-auto py-8 px-10 lg:px-10 mt-10 lg:mt-0 rounded-lg shadow-neumorphismdark'>
+      <div className='max-w-xl  lg:max-w-none lg:w-5/12 mt-10 mx-auto py-8 px-10 rounded-lg shadow-neumorphismdark'>
           <div className='flex justify-center'>
             <div className='flex items-center'>
                 <Image src="/images/kamo.jpg" width={90} height={90} objectFit="contain" className='rounded-full' />
