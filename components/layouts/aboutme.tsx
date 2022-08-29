@@ -7,7 +7,7 @@ export default function Aboutme() {
       <div className='max-w-xl  lg:max-w-none lg:w-5/12 mt-10 mx-auto py-8 px-10 rounded-lg shadow-neumorphismdark'>
           <div className='flex justify-center'>
             <div className='flex items-center'>
-                <Image src="/images/kamo.jpg" width={90} height={90} objectFit="contain" className='rounded-full' />
+                <Image src="/images/kamo.jpg" width={90} height={90} objectFit="contain" alt='icon 'className='rounded-full' />
                 <div className="ml-6 pt-1">
                     <p className="text-2xl leading-tight">Yusaku Washio</p>
                     <p className='text-base leading-normal text-gray-300'>waarrk</p>
@@ -17,16 +17,16 @@ export default function Aboutme() {
           </div>
           <div className='mt-10 mx-auto w-8/12 lg:w-10/12 flex justify-around items-center'>
               <Link href="https://github.com/waarrk">
-                <Image src="/images/github.svg" width={25} height={25} objectFit="contain" className='rounded-full hover:opacity-50' />
+                <Image src="/images/github.svg" width={25} height={25} objectFit="contain" alt='GitHub'className='rounded-full hover:opacity-50' />
               </Link>
               <Link href="https://twitter.com/waarrk">
-                <Image src="/images/twitter.svg" width={25} height={25} objectFit="contain" className='hover:opacity-50'/>
+                <Image src="/images/twitter.svg" width={25} height={25} objectFit="contain" alt='Twitter' className='hover:opacity-50'/>
               </Link>
               <Link href="https://www.instagram.com/waarrk/">
-                <Image src="/images/Instagram.svg" width={25} height={25} objectFit="contain" className='invert hover:opacity-50'/>
+                <Image src="/images/Instagram.svg" width={25} height={25} objectFit="contain" alt='Instagram' className='invert hover:opacity-50'/>
               </Link>
               <Link href="">
-                <Image src="/images/rss.svg" width={25} height={25} objectFit="contain" className='hover:opacity-50'/>
+                <Image src="/images/rss.svg" width={25} height={25} objectFit="contain" alt='RSS' className='hover:opacity-50'/>
               </Link>
           </div>
         </div>
