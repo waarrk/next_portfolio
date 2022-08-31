@@ -25,9 +25,6 @@ export default function Aboutme() {
               <Link href="https://www.instagram.com/waarrk/">
                 <Image src="/images/Instagram.svg" width={25} height={25} objectFit="contain" alt='Instagram' className='invert hover:opacity-50'/>
               </Link>
-              <Link href="">
-                <Image src="/images/rss.svg" width={25} height={25} objectFit="contain" alt='RSS' className='hover:opacity-50'/>
-              </Link>
           </div>
         </div>
     </>
