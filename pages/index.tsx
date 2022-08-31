@@ -34,12 +34,12 @@ const Home: NextPage = () => {
             <Short title='interests'>
               <p>
                 In my private life, I like outdoor activities such as travel and photography.
-                I'm practicing because I want to take cute portraits of my friends.
+                I am practicing because I want to take cute portraits of my friends.
                 Driving a car to go far away and photographing the starry sky at night are the greatest pleasures.<br/><br/>
-                Recently, I've been working on the hardware abstraction layer for STM32.
+                Recently, I have been working on the hardware abstraction layer for STM32.
                 I feel that HAL is difficult to approach and library management is difficult.
                 I would like to learn how to do it systematically.
-                I'm also thinking about studying infrastructure recently.
+                I am also thinking about studying infrastructure recently.
                 nice to meet you.
               </p>
             </Short>
