@@ -14,7 +14,7 @@ const Home: NextPage = () => {
     <div>
       <Head>
         <title>waarrk | Yusaku Washio</title>
-        <meta name="description" content="Yusaku Washio Personal Page." />
+        <meta name='description' content='Yusaku Washio Personal Page.' />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -32,14 +32,16 @@ const Home: NextPage = () => {
         <div className='flex justify-center'>
           <div className='w-10/12 max-w-5xl lg:flex lg:justify-between'>
             <Short title='interests'>
-              In my private life, I like outdoor activities such as travel and photography.
-              I'm practicing because I want to take cute portraits of my friends.
-              Driving a car to go far away and photographing the starry sky at night are the greatest pleasures.<br/><br/>
-              Recently, I've been working on the hardware abstraction layer for STM32.
-              I feel that HAL is difficult to approach and library management is difficult.
-              I would like to learn how to do it systematically.
-              I'm also thinking about studying infrastructure recently.
-nice to meet you.
+              <p>
+                In my private life, I like outdoor activities such as travel and photography.
+                I'm practicing because I want to take cute portraits of my friends.
+                Driving a car to go far away and photographing the starry sky at night are the greatest pleasures.<br/><br/>
+                Recently, I've been working on the hardware abstraction layer for STM32.
+                I feel that HAL is difficult to approach and library management is difficult.
+                I would like to learn how to do it systematically.
+                I'm also thinking about studying infrastructure recently.
+                nice to meet you.
+              </p>
             </Short>
             <Wide title='Bio'>
               <Year title={2003}>birth</Year>
