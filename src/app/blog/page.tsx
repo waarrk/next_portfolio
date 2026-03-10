@@ -17,7 +17,7 @@ export default function BlogPage() {
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-10">
-      <SectionHeading as="h1" className="mb-8 text-2xl">Blog</SectionHeading>
+      <h1 className="mb-8 font-mono text-2xl font-bold" style={{ color: "var(--foreground)" }}>Blog</h1>
       <div className="flex flex-col gap-8 lg:flex-row lg:gap-12">
         {/* Posts list */}
         <div className="flex-1">
@@ -32,7 +32,7 @@ export default function BlogPage() {
         <aside className="w-full lg:w-52 shrink-0 space-y-6">
           {tags.length > 0 && (
             <div>
-              <p className="mb-3 text-xs font-semibold uppercase tracking-wider" style={{ color: "var(--muted)" }}>
+              <p className="mb-3 font-mono text-xs font-semibold uppercase tracking-wider" style={{ color: "var(--muted)" }}>
                 Tags
               </p>
               <div className="flex flex-wrap gap-2">
@@ -45,7 +45,7 @@ export default function BlogPage() {
 
           {years.length > 0 && (
             <div>
-              <p className="mb-3 text-xs font-semibold uppercase tracking-wider" style={{ color: "var(--muted)" }}>
+              <p className="mb-3 font-mono text-xs font-semibold uppercase tracking-wider" style={{ color: "var(--muted)" }}>
                 Archive
               </p>
               <ul className="space-y-1.5">
@@ -53,7 +53,7 @@ export default function BlogPage() {
                   <li key={year}>
                     <Link
                       href={`/blog/archive/${year}`}
-                      className="text-sm transition-opacity hover:opacity-70"
+                      className="font-mono text-xs transition-opacity hover:opacity-70"
                       style={{ color: "var(--muted)" }}
                     >
                       {year}

@@ -20,12 +20,11 @@ export default function ProjectCard({ project }: Props) {
       href={frontmatter.url}
       target="_blank"
       rel="noopener noreferrer"
-      className="project-card group flex gap-4 rounded-xl border p-4"
-      style={{ background: "var(--surface)" }}
+      className="project-card group flex gap-4 border-b py-4"
     >
       {/* Thumbnail */}
       <div
-        className="relative h-20 w-28 shrink-0 overflow-hidden rounded-lg"
+        className="relative h-20 w-28 shrink-0 overflow-hidden"
         style={{ background: "var(--border)" }}
       >
         {frontmatter.image ? (
@@ -65,7 +64,7 @@ export default function ProjectCard({ project }: Props) {
             {frontmatter.tags.map((tag) => (
               <span
                 key={tag}
-                className="rounded px-1.5 py-0.5 text-xs"
+                className="px-1.5 py-0.5 text-xs"
                 style={{ background: "var(--border)", color: "var(--muted)" }}
               >
                 {tag}

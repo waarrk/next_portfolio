@@ -16,7 +16,7 @@ export default function PostCard({ post }: Props) {
         {/* Date */}
         <time
           dateTime={frontmatter.date}
-          className="mt-0.5 w-24 shrink-0 text-xs tabular-nums"
+          className="mt-0.5 w-32 shrink-0 font-mono text-xs tabular-nums"
           style={{ color: "var(--muted)" }}
         >
           {formatDateJa(frontmatter.date)}
@@ -46,7 +46,7 @@ export default function PostCard({ post }: Props) {
             ))}
             <Link
               href={`/blog/${slug}`}
-              className="ml-auto text-xs font-medium transition-opacity hover:opacity-70"
+              className="ml-auto font-mono text-xs transition-opacity hover:opacity-70"
               style={{ color: "var(--accent-text)" }}
             >
               続きを読む →

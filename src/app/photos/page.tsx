@@ -13,7 +13,7 @@ export default async function PhotosPage() {
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-10">
-      <h1 className="mb-8 text-2xl font-bold" style={{ color: "var(--foreground)" }}>Photos</h1>
+      <h1 className="mb-8 font-mono text-2xl font-bold" style={{ color: "var(--foreground)" }}>Photos</h1>
       {albums.length === 0 ? (
         <p style={{ color: "var(--muted)" }}>アルバムはまだありません。</p>
       ) : (

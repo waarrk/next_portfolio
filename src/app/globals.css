@@ -26,26 +26,15 @@ body {
 }
 
 /* ============================================
-   Section Heading — 左ティールボーダー付き
+   Section Heading
    ============================================ */
 .section-heading {
-  display: flex;
-  align-items: center;
-  gap: 0.65rem;
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--foreground);
-  letter-spacing: -0.01em;
-}
-
-.section-heading::before {
-  content: "";
-  display: inline-block;
-  width: 4px;
-  height: 1.15em;
-  background: var(--accent);
-  border-radius: 2px;
-  flex-shrink: 0;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--muted);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-family: var(--font-mono), monospace;
 }
 
 /* ============================================

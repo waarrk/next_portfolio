@@ -20,7 +20,7 @@ export default function ProjectsPage() {
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-10">
-      <SectionHeading as="h1" className="mb-2 text-2xl">Projects</SectionHeading>
+      <h1 className="mb-2 font-mono text-2xl font-bold" style={{ color: "var(--foreground)" }}>Projects</h1>
       <p className="mb-10 mt-2 text-sm" style={{ color: "var(--muted)" }}>
         やり散らかし一覧。進行中・完成・休止中のプロジェクトをまとめています。
       </p>
@@ -31,7 +31,7 @@ export default function ProjectsPage() {
         <div className="space-y-12">
           {grouped.map(({ status, items }) => (
             <section key={status}>
-              <p className="mb-4 text-xs font-semibold uppercase tracking-wider" style={{ color: "var(--muted)" }}>
+              <p className="mb-4 font-mono text-xs font-semibold uppercase tracking-wider" style={{ color: "var(--muted)" }}>
                 {status}
               </p>
               <div className="space-y-3">

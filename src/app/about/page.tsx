@@ -66,8 +66,8 @@ export default function AboutPage() {
           {RESEARCH_INTERESTS.map(({ en, ja }) => (
             <div
               key={en}
-              className="flex items-baseline gap-3 rounded-lg border px-4 py-3"
-              style={{ borderColor: "var(--border)", background: "var(--surface)" }}
+              className="flex items-baseline gap-3 border-b py-3 last:border-0"
+              style={{ borderColor: "var(--border)" }}
             >
               <span className="text-sm font-semibold" style={{ color: "var(--foreground)" }}>{en}</span>
               <span className="text-xs" style={{ color: "var(--muted)" }}>{ja}</span>
@@ -79,12 +79,7 @@ export default function AboutPage() {
       {/* ── Publications ───────────────────────── */}
       <section className="mb-10">
         <SectionHeading as="h2" className="mb-5">Publications</SectionHeading>
-        <div
-          className="rounded-xl border px-5 py-8 text-center text-sm"
-          style={{ borderColor: "var(--border)", color: "var(--muted)" }}
-        >
-          準備中
-        </div>
+        <p className="text-sm" style={{ color: "var(--muted)" }}>準備中</p>
       </section>
 
       {/* ── Education ──────────────────────────── */}
@@ -114,8 +109,8 @@ export default function AboutPage() {
           {TOOLS.map(({ cat, items }) => (
             <div
               key={cat}
-              className="rounded-xl border p-4"
-              style={{ borderColor: "var(--border)", background: "var(--surface)" }}
+              className="border-t pt-4"
+              style={{ borderColor: "var(--border)" }}
             >
               <p
                 className="mb-3 font-mono text-[10px] font-semibold uppercase tracking-widest"
@@ -127,12 +122,8 @@ export default function AboutPage() {
                 {items.map((item) => (
                   <span
                     key={item}
-                    className="rounded border px-2 py-0.5 font-mono text-xs"
-                    style={{
-                      borderColor: "var(--border)",
-                      color: "var(--muted)",
-                      background: "var(--background)",
-                    }}
+                    className="font-mono text-xs"
+                    style={{ color: "var(--muted)" }}
                   >
                     {item}
                   </span>
@@ -153,11 +144,10 @@ export default function AboutPage() {
               href={url}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full border px-4 py-2 text-sm font-medium transition-opacity hover:opacity-70"
-              style={{ borderColor: "var(--border)", color: "var(--muted)" }}
+              className="font-mono text-xs underline underline-offset-4 decoration-1 transition-opacity hover:opacity-50"
+              style={{ color: "var(--muted)" }}
             >
-              <span className="font-mono text-xs" style={{ color: "var(--accent)" }}>{handle}</span>
-              {label}
+              {handle} ↗
             </a>
           ))}
         </div>

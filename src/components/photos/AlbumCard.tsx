@@ -13,8 +13,7 @@ export default function AlbumCard({ album }: Props) {
   return (
     <Link
       href={`/photos/${slug}`}
-      className="group block overflow-hidden rounded-xl"
-      style={{ background: "var(--surface)" }}
+      className="group block overflow-hidden"
     >
       <div className="relative aspect-[4/3] overflow-hidden">
         {coverSrc ? (
@@ -36,13 +35,13 @@ export default function AlbumCard({ album }: Props) {
       </div>
       <div className="p-3">
         <h2
-          className="text-sm font-semibold leading-snug transition-opacity group-hover:opacity-70"
+          className="font-mono text-xs font-semibold leading-snug transition-opacity group-hover:opacity-70"
           style={{ color: "var(--foreground)" }}
         >
           {frontmatter.title}
         </h2>
         <div
-          className="mt-1 flex items-center gap-2 text-xs"
+          className="mt-1 flex items-center gap-2 font-mono text-xs"
           style={{ color: "var(--muted)" }}
         >
           <time dateTime={frontmatter.date}>{formatDateJa(frontmatter.date)}</time>

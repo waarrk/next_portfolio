@@ -11,10 +11,10 @@ export default function TagBadge({ tag, link = true, className }: Props) {
   const badge = (
     <span
       className={clsx(
-        "inline-block rounded-full px-2.5 py-0.5 text-xs font-medium transition-opacity hover:opacity-70",
+        "inline-block font-mono text-xs transition-opacity hover:opacity-70",
         className
       )}
-      style={{ background: "#eef2ff", color: "var(--accent-text)" }}
+      style={{ color: "var(--muted)" }}
     >
       {tag}
     </span>
