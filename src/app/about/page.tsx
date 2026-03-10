@@ -6,36 +6,35 @@ export const metadata: Metadata = {
   description: "鷲尾優作（waarrk）について",
 };
 
-const SKILLS = [
-  { cat: "言語", items: ["C / C++", "Python", "Rust", "TypeScript", "MATLAB"] },
-  { cat: "組み込み / HW", items: ["ROS2", "STM32", "ESP32", "FreeRTOS", "FPGA"] },
-  { cat: "Web", items: ["Next.js", "React", "Tailwind CSS", "Node.js"] },
-  { cat: "ツール", items: ["Git", "Docker", "Linux", "Fusion 360"] },
+const RESEARCH_INTERESTS = [
+  { en: "Robot Motion Control", ja: "ロボット運動制御" },
+  { en: "Autonomous Mobile Robots", ja: "自律移動ロボット" },
+  { en: "Embedded Systems", ja: "組み込みシステム" },
+  { en: "ROS2-based System Development", ja: "ROS2 ベースのシステム開発" },
 ];
 
 const EDUCATION = [
   {
-    period: "2023 – 現在",
-    title: "千葉工業大学大学院 工学研究科",
-    sub: "機械電子創成工学専攻",
+    period: "2024 – 現在",
+    title: "千葉工業大学 先進工学部",
+    sub: "未来ロボティクス学科",
   },
   {
-    period: "2019 – 2023",
-    title: "千葉工業大学 工学部",
-    sub: "機械電子創成工学科",
+    period: "2019 – 2024",
+    title: "長岡工業高等専門学校",
+    sub: "電子制御工学科",
   },
 ];
 
-const INTERESTS = [
-  { emoji: "📷", label: "写真（ポートレート・風景）" },
-  { emoji: "🚲", label: "自転車" },
-  { emoji: "🤖", label: "ロボット工学" },
-  { emoji: "💻", label: "プログラミング" },
-  { emoji: "🎮", label: "ゲーム" },
+const TOOLS = [
+  { cat: "言語", items: ["C / C++", "Python", "Rust", "TypeScript", "MATLAB"] },
+  { cat: "フレームワーク / MW", items: ["ROS2", "FreeRTOS", "Next.js", "React"] },
+  { cat: "ハードウェア", items: ["STM32", "ESP32", "FPGA", "Raspberry Pi"] },
+  { cat: "ツール", items: ["Git", "Docker", "Linux", "Fusion 360"] },
 ];
 
 const LINKS = [
-  { label: "GitHub", handle: "@waarrk", url: "https://github.com/waarrk" },
+  { label: "GitHub", handle: "waarrk", url: "https://github.com/waarrk" },
   { label: "X (Twitter)", handle: "@waarrk", url: "https://x.com/waarrk" },
 ];
 
@@ -43,72 +42,76 @@ export default function AboutPage() {
   return (
     <div className="mx-auto max-w-3xl px-4 py-10">
 
-      {/* ── Profile header ─────────────────── */}
-      <div
-        className="mb-10 rounded-2xl border p-6 sm:p-8"
-        style={{ borderColor: "var(--border)", background: "var(--surface)" }}
-      >
-        <div className="flex flex-col gap-5 sm:flex-row sm:items-start sm:gap-7">
-          <div
-            className="flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl text-4xl"
-            style={{ background: "var(--hero-bg)", border: "1px solid var(--border)" }}
-          >
-            🧑‍💻
-          </div>
-
-          <div className="flex-1">
-            <p className="mb-1 font-mono text-xs" style={{ color: "var(--accent)" }}>
-              @waarrk
-            </p>
-            <h1 className="text-2xl font-bold tracking-tight" style={{ color: "var(--foreground)" }}>
-              鷲尾 優作
-              <span className="ml-2 text-base font-normal" style={{ color: "var(--muted)" }}>
-                / Yusaku Washio
-              </span>
-            </h1>
-
-            <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-sm" style={{ color: "var(--muted)" }}>
-              <span className="inline-flex items-center gap-1">
-                <span className="font-mono text-xs">🎓</span>
-                千葉工業大学 大学院
-              </span>
-              <span className="inline-flex items-center gap-1">
-                <span className="font-mono text-xs">📍</span>
-                千葉, 日本
-              </span>
-            </div>
-
-            <p className="mt-3 max-w-md text-sm leading-relaxed" style={{ color: "var(--muted)" }}>
-              ロボット・組み込みシステム・Web の境界域を漂う開発者。
-              コードを書き、写真を撮り、自転車で走る。
-              研究室ではロボット制御とか組み込みとかやってます。
-            </p>
-
-            <div className="mt-4 flex flex-wrap gap-4">
-              {[
-                { label: "プログラミング歴", value: "10+ 年" },
-                { label: "使用言語", value: "5+" },
-                { label: "趣味", value: "写真・自転車" },
-              ].map(({ label, value }) => (
-                <div key={label}>
-                  <p className="font-mono text-base font-bold" style={{ color: "var(--accent)" }}>
-                    {value}
-                  </p>
-                  <p className="text-xs" style={{ color: "var(--muted)" }}>
-                    {label}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* ── Skills ─────────────────────────── */}
+      {/* ── Profile ─────────────────────────────── */}
       <section className="mb-10">
-        <SectionHeading as="h2" className="mb-5">スキル</SectionHeading>
+        <p className="mb-1 text-sm" style={{ color: "var(--muted)" }}>
+          千葉工業大学 先進工学部 未来ロボティクス学科
+        </p>
+        <h1 className="text-3xl font-bold tracking-tight" style={{ color: "var(--foreground)" }}>
+          Yusaku Washio
+        </h1>
+        <p className="mt-0.5 text-lg" style={{ color: "var(--muted)" }}>鷲尾 優作 · システム魔法使い</p>
+
+        <p className="mt-4 max-w-xl text-sm leading-relaxed" style={{ color: "var(--muted)" }}>
+          千葉工業大学大学院にて、ロボット制御・自律移動システムの研究に従事。
+          組み込みシステムおよび ROS2 を用いたロボットソフトウェアの開発を行っている。
+          趣味は写真撮影と自転車。
+        </p>
+      </section>
+
+      {/* ── Research Interests ─────────────────── */}
+      <section className="mb-10">
+        <SectionHeading as="h2" className="mb-5">Research Interests</SectionHeading>
+        <div className="space-y-2">
+          {RESEARCH_INTERESTS.map(({ en, ja }) => (
+            <div
+              key={en}
+              className="flex items-baseline gap-3 rounded-lg border px-4 py-3"
+              style={{ borderColor: "var(--border)", background: "var(--surface)" }}
+            >
+              <span className="text-sm font-semibold" style={{ color: "var(--foreground)" }}>{en}</span>
+              <span className="text-xs" style={{ color: "var(--muted)" }}>{ja}</span>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ── Publications ───────────────────────── */}
+      <section className="mb-10">
+        <SectionHeading as="h2" className="mb-5">Publications</SectionHeading>
+        <div
+          className="rounded-xl border px-5 py-8 text-center text-sm"
+          style={{ borderColor: "var(--border)", color: "var(--muted)" }}
+        >
+          準備中
+        </div>
+      </section>
+
+      {/* ── Education ──────────────────────────── */}
+      <section className="mb-10">
+        <SectionHeading as="h2" className="mb-5">Education</SectionHeading>
+        <div className="relative border-l-2 pl-6" style={{ borderColor: "var(--border)" }}>
+          {EDUCATION.map(({ period, title, sub }) => (
+            <div key={period} className="relative pb-6 last:pb-0">
+              <span
+                className="absolute -left-[1.4rem] top-1 h-3 w-3 rounded-full border-2"
+                style={{ borderColor: "var(--accent)", background: "var(--background)" }}
+              />
+              <p className="mb-0.5 font-mono text-xs tabular-nums" style={{ color: "var(--muted)" }}>
+                {period}
+              </p>
+              <p className="text-sm font-semibold" style={{ color: "var(--foreground)" }}>{title}</p>
+              <p className="mt-0.5 text-xs" style={{ color: "var(--muted)" }}>{sub}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ── Tools ──────────────────────────────── */}
+      <section className="mb-10">
+        <SectionHeading as="h2" className="mb-5">Tools & Technologies</SectionHeading>
         <div className="grid gap-3 sm:grid-cols-2">
-          {SKILLS.map(({ cat, items }) => (
+          {TOOLS.map(({ cat, items }) => (
             <div
               key={cat}
               className="rounded-xl border p-4"
@@ -116,7 +119,7 @@ export default function AboutPage() {
             >
               <p
                 className="mb-3 font-mono text-[10px] font-semibold uppercase tracking-widest"
-                style={{ color: "var(--accent)" }}
+                style={{ color: "var(--muted)" }}
               >
                 {cat}
               </p>
@@ -140,50 +143,9 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ── Education timeline ──────────────── */}
-      <section className="mb-10">
-        <SectionHeading as="h2" className="mb-5">学歴</SectionHeading>
-        <div className="relative border-l-2 pl-6" style={{ borderColor: "var(--border)" }}>
-          {EDUCATION.map(({ period, title, sub }) => (
-            <div key={period} className="relative pb-6 last:pb-0">
-              <span
-                className="absolute -left-[1.4rem] top-1 h-3 w-3 rounded-full border-2"
-                style={{ borderColor: "var(--accent)", background: "var(--background)" }}
-              />
-              <p className="mb-0.5 font-mono text-xs tabular-nums" style={{ color: "var(--accent)" }}>
-                {period}
-              </p>
-              <p className="text-sm font-semibold" style={{ color: "var(--foreground)" }}>
-                {title}
-              </p>
-              <p className="mt-0.5 text-xs" style={{ color: "var(--muted)" }}>
-                {sub}
-              </p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* ── Interests ──────────────────────── */}
-      <section className="mb-10">
-        <SectionHeading as="h2" className="mb-5">趣味 / 興味</SectionHeading>
-        <div className="flex flex-wrap gap-2">
-          {INTERESTS.map(({ emoji, label }) => (
-            <span
-              key={label}
-              className="inline-flex items-center gap-2 rounded-full border px-3 py-1.5 text-sm"
-              style={{ borderColor: "var(--border)", color: "var(--muted)" }}
-            >
-              <span>{emoji}</span>
-              {label}
-            </span>
-          ))}
-        </div>
-      </section>
-
-      {/* ── Links ──────────────────────────── */}
+      {/* ── Links ──────────────────────────────── */}
       <section>
-        <SectionHeading as="h2" className="mb-5">リンク</SectionHeading>
+        <SectionHeading as="h2" className="mb-5">Links</SectionHeading>
         <div className="flex flex-wrap gap-3">
           {LINKS.map(({ label, handle, url }) => (
             <a
@@ -194,9 +156,7 @@ export default function AboutPage() {
               className="inline-flex items-center gap-2 rounded-full border px-4 py-2 text-sm font-medium transition-opacity hover:opacity-70"
               style={{ borderColor: "var(--border)", color: "var(--muted)" }}
             >
-              <span className="font-mono text-xs" style={{ color: "var(--accent)" }}>
-                {handle}
-              </span>
+              <span className="font-mono text-xs" style={{ color: "var(--accent)" }}>{handle}</span>
               {label}
             </a>
           ))}
