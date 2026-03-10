@@ -1,10 +1,10 @@
 "use client";
 
-import { useEffect } from "react";
+import {useEffect} from "react";
 
 /**
- * busuanzi を使ったページビューカウンター。
- * 本番ドメインでのみ正確な数値が表示される（localhost では "--" になる）。
+ * busuanzi を使ったページビューカウンター．
+ * 本番ドメインでのみ正確な数値が表示される（localhost では "--" になる）．
  */
 export default function ViewCount() {
   useEffect(() => {
@@ -23,7 +23,7 @@ export default function ViewCount() {
     <span
       id="busuanzi_container_page_pv"
       className="text-xs"
-      style={{ color: "var(--muted)" }}
+      style={{color: "var(--muted)"}}
     >
       閲覧数:{" "}
       <span id="busuanzi_value_page_pv" className="tabular-nums">

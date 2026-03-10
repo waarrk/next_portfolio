@@ -10,20 +10,20 @@ export default function PostHeader({ frontmatter }: Props) {
   return (
     <header className="mb-8 border-b pb-6" style={{ borderColor: "var(--border)" }}>
       <h1
-        className="text-2xl font-bold sm:text-3xl"
+        className="font-mono text-2xl font-bold sm:text-3xl"
         style={{ color: "var(--foreground)" }}
       >
         {frontmatter.title}
       </h1>
       {frontmatter.description && (
-        <p className="mt-2" style={{ color: "var(--muted)" }}>
+        <p className="mt-2 text-sm" style={{ color: "var(--muted)" }}>
           {frontmatter.description}
         </p>
       )}
       <div className="mt-3 flex flex-wrap items-center gap-2">
         <time
           dateTime={frontmatter.date}
-          className="text-sm"
+          className="font-mono text-xs tabular-nums"
           style={{ color: "var(--muted)" }}
         >
           {formatDateJa(frontmatter.date)}

@@ -50,10 +50,10 @@ export default async function BlogPostPage({ params }: Props) {
       <div className="mt-6">
         <Link
           href="/blog"
-          className="text-sm transition-opacity hover:opacity-70"
+          className="font-mono text-xs transition-opacity hover:opacity-70"
           style={{ color: "var(--muted)" }}
         >
-          &larr; 記事一覧に戻る
+          ← 記事一覧に戻る
         </Link>
       </div>
     </div>

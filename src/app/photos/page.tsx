@@ -1,5 +1,5 @@
-import type { Metadata } from "next";
-import { getAllAlbumMetas, copyAllAlbumImages } from "@/lib/photos";
+import type {Metadata} from "next";
+import {getAllAlbumMetas, copyAllAlbumImages} from "@/lib/photos";
 import AlbumCard from "@/components/photos/AlbumCard";
 
 export const metadata: Metadata = {
@@ -13,9 +13,14 @@ export default async function PhotosPage() {
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-10">
-      <h1 className="mb-8 font-mono text-2xl font-bold" style={{ color: "var(--foreground)" }}>Photos</h1>
+      <h1
+        className="mb-8 font-mono text-2xl font-bold"
+        style={{color: "var(--foreground)"}}
+      >
+        Photos
+      </h1>
       {albums.length === 0 ? (
-        <p style={{ color: "var(--muted)" }}>アルバムはまだありません。</p>
+        <p style={{color: "var(--muted)"}}>アルバムはまだありません．</p>
       ) : (
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
           {albums.map((album) => (

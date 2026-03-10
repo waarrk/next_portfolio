@@ -20,7 +20,7 @@ export default function ProjectCard({ project }: Props) {
       href={frontmatter.url}
       target="_blank"
       rel="noopener noreferrer"
-      className="project-card group flex gap-4 border-b py-4"
+      className="project-card group flex gap-4 border-b py-4 last:border-0"
     >
       {/* Thumbnail */}
       <div

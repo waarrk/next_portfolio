@@ -1,6 +1,6 @@
 ---
 title: "競技ロボット開発"
-description: "ROS2を使った自律移動ロボット。Robomech2026向けに開発中。センサーフュージョン・経路計画を実装している。"
+description: "ROS2を使った自律移動ロボット．Robomech2026向けに開発中．センサーフュージョン・経路計画を実装している．"
 image: ""
 url: "https://github.com/waarrk"
 status: "進行中"
